@@ -6,7 +6,7 @@ function Header() {
 
     return (
         <>
-            <div className="fixed top-0   left-0 z-50 w-full h-17 backdrop-blur-xl border-b-1 border-neutral-300 flex items-center">
+            <div className="fixed top-0   left-0 z-100 w-full h-17 backdrop-blur-xl border-b-1 border-neutral-300 flex items-center">
 
                 <Link to="/">
                     <img
@@ -60,7 +60,7 @@ function Header() {
 
                 </div>
 
-                
+            
 
             </div>
             

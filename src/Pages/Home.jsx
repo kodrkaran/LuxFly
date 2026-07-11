@@ -1,12 +1,12 @@
 import React from 'react'
-import { Send, Plane, MoveRight, PlaneTakeoff, PlaneLanding, Building2, Car, Search, ArrowLeftRight } from 'lucide-react';
+import { Send, Plane, MoveRight, PlaneTakeoff, PlaneLanding, Building2, Car, Search, ArrowUpDown } from 'lucide-react';
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
 const Home = () => {
     const [tripType, setTripType] = useState("round");
-  const [tab, setTab] = useState("flights");
+    const [tab, setTab] = useState("flights");
 
     return (
         <>
@@ -68,11 +68,46 @@ const Home = () => {
                 <p className='font-semibold text-3xl self-center ml-30'>Flight Booking</p>
             </div> */}
 
-            <div className="">
-                <div className=""></div>
+            <div className="border relative border-neutral-300 h-40 flex justify-center rounded-4xl bg-white shadow-[0_0_10px_rgba(0,0,0,0.2)] ml-14 mb-20 mt-10 w-11/12">
+                <div className=" flex gap-3  h-3 mt-8 -ml-220">
+                    <label className="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="tripType"
+                            value="roundTrip"
+                            className="w-4 h-4 accent-black"
+                        />
+                        <span className="text-sm text-black font-semibold">Round trip</span>
+                    </label>
+                    <label className="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="tripType"
+                            value="roundTrip"
+                            className="w-4 h-4 accent-black"
+                        />
+                        <span className="text-sm text-black font-semibold">One way</span>
+                    </label>
+                    <label className="flex items-center gap-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="tripType"
+                            value="roundTrip"
+                            className="w-4 h-4 accent-black"
+                        />
+                        <span className="text-sm text-black font-semibold">Multi-city</span>
+                    </label>
+                </div>
+                <div className="border absolute border-neutral-300 h-18 flex justify-center rounded-3xl bg-white  -ml-220 mb-20 mt-16 w-70">
+                    <p className='text-[11px] font-semibold text-neutral-500 absolute -ml-50 mt-3.5'>FROM</p>
+                    <input type="text" placeholder='' />
+                </div>
+                <ArrowUpDown className='bg-black absolute text-white p-2 z-10 cursor-pointer h-8 w-8 rounded-full hover:rotate-180 hover:transition-transform duration-500 mt-21 -ml-148' />
+                <div className="border absolute border-neutral-300 h-18 flex justify-center rounded-3xl bg-white  -ml-75 mb-20 mt-16 w-70"></div>
+
             </div>
 
-            
+
 
         </>
     )
