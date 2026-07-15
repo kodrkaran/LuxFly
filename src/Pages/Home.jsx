@@ -1,5 +1,5 @@
 import React from 'react'
-import { Send, Plane, MoveRight, ChevronRight, PlaneTakeoff, PlaneLanding, Building2, Wallet, Car, TicketsPlane, Search, ArrowUpDown, MapPin } from 'lucide-react';
+import { Send, Plane, MoveRight, ChevronRight, PlaneTakeoff, Headphones, Shield, Star, PlaneLanding, Building2, Wallet, Car, TicketsPlane, Search, ArrowUpDown, MapPin } from 'lucide-react';
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -306,6 +306,50 @@ const Home = () => {
                 </div>
 
             </div>
+
+            <img className="w-[28%]  h-130 absolute ml-23 rounded-2xl " src="src/assets/download (1).jpg" alt="" />
+
+
+            <div className="mt-70 mb-40 mr-10">
+                <div className="">
+                    <p className=" text-left  text-[15px] leading-5 mt-3 text-neutral-600 absolute flex ml-221 font-semibold flex w-[28%]">
+                        Travelling is a Wonderful Way To Explore New Places. Learn
+                        About Different Cultures And Gain Unique Experiences.
+                    </p>
+                </div>
+
+
+                <div className="ml-26">
+                    <p className="text-7xl font-semibold text-center">UNLEASH</p>
+                </div>
+                <div className="flex justify-end mr-22">
+                    <p className="text-7xl font-semibold text-center">WANDERLUST WITH</p>
+                </div>
+
+                <div className="flex justify-end mr-22">
+                    <p className="text-7xl font-semibold text-center">SKYWINGS</p>
+                </div>
+
+                <div className="">
+                    <p className=" text-left  text-[15px] leading-5 -mt-13 text-neutral-600 absolute flex ml-139 font-semibold flex w-[22.2%] ">
+                        Travelling is a Wonderful Way To Explore New Places. Learn
+                        About Different Cultures.
+                    </p>
+                </div>
+            </div>
+
+            <div className='ml-22 mb-10 mt-50'>
+                <p className="font-semibold px-4 py-2 rounded-full border flex justify-center w-30 border-neutral-400">About</p>
+            </div>
+
+            <div className="mb-10 -mt-10">
+                <p className="w-[55%] text-left absolute ml-130 -mt-17 mb-3 font-bold ">Discover the world with LuxFly, where every journey is crafted with comfort, adventure, and unforgettable experiences. We offer personalized travel packages, seamless bookings, and exceptional service to make every trip truly memorable.</p>
+                <p className=" w-[26%] text-left font-semibold text-neutral-600 text-sm ml-134 pt-8 ">We create customized travel experiences tailored to your budget, preferences, and schedule. From family vacations to luxury getaways, every itinerary is carefully planned to ensure comfort, convenience, and unforgettable memories.</p>
+                <div className="h-32 rounded-full  w-2 bg-blue-700 absolute ml-130 -mt-28  "></div>
+                <div className="h-32 rounded-full  w-2 bg-blue-700 absolute ml-223 -mt-28  "></div>
+                <p className="w-[26%] text-left font-semibold text-neutral-600 text-sm ml-228 -mt-25 ">Enjoy seamless flight, hotel, and holiday package bookings with transparent pricing and dedicated support. We handle every detail so you can travel confidently and focus on making the most of your journey.</p>
+            </div>
+
 
 
 
