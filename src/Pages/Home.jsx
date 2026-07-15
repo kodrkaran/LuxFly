@@ -1,5 +1,5 @@
 import React from 'react'
-import { Send, Plane, MoveRight, ChevronRight, PlaneTakeoff, Headphones, Shield, Star, PlaneLanding, Building2, Wallet, Car, TicketsPlane, Search, ArrowUpDown, MapPin } from 'lucide-react';
+import { Send, Plane, MoveRight, ArrowRight, Play, ChevronRight, PlaneTakeoff, Headphones, Shield, Star, PlaneLanding, Building2, Wallet, Car, TicketsPlane, Search, ArrowUpDown, MapPin } from 'lucide-react';
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -164,198 +164,208 @@ const Home = () => {
             </div>
 
 
-            <div className="py-10">
-                <div className="flex justify-start ml-30">
-                    <p className="text-[max(1.25vw,28px)] font-bold text-gray-900">
-                        Top Destinations
-                    </p>
+            <div className="w-full overflow-x-hidden">
+                <div className="py-10 px-4 sm:px-6 lg:px-16 max-w-[1400px] mx-auto">
+                    <div className="text-left mb-2">
+                        <p className="text-2xl sm:text-3xl lg:text-[max(1.25vw,28px)] font-bold text-gray-900">
+                            Top Destinations
+                        </p>
+                    </div>
+
+                    <div className="text-left mb-8">
+                        <p className="text-sm sm:text-base lg:text-[max(1.1vw,16px)] text-gray-500 font-semibold">
+                            Top tour served by our company. You can find the best tour for your next vacation.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="w-full cursor-pointer group">
+                            <Link to="/tour">
+                                <div className="overflow-hidden rounded-xl h-80">
+                                    <img
+                                        src="src/assets/a0d85f67b1994ac8a87c4b9b7952901c.jpg"
+                                        alt="Paris"
+                                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    />
+                                </div>
+                            </Link>
+                            <p className="mt-3 text-lg font-bold text-gray-900">Paris, France</p>
+                        </div>
+
+                        <div className="w-full cursor-pointer group">
+                            <Link to="/tour">
+                                <div className="overflow-hidden rounded-xl h-80">
+                                    <img
+                                        src="src/assets/08c8f427c977922609982952ddc968a3.jpg"
+                                        alt="Tokyo"
+                                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    />
+                                </div>
+                            </Link>
+                            <p className="mt-3 text-lg font-bold text-gray-900">Tokyo, Japan</p>
+                        </div>
+
+                        <div className="w-full cursor-pointer group">
+                            <Link to="/tour">
+                                <div className="overflow-hidden rounded-xl h-80">
+                                    <img
+                                        src="src/assets/a0d85f67b1994ac8a87c4b9b7952901c.jpg"
+                                        alt="New York"
+                                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    />
+                                </div>
+                            </Link>
+                            <p className="mt-3 text-lg font-bold text-gray-900">New York, USA</p>
+                        </div>
+
+                        <div className="w-full cursor-pointer group">
+                            <Link to="/tour">
+                                <div className="overflow-hidden rounded-xl h-80">
+                                    <img
+                                        src="src/assets/56652fa2a3808c02ca4d376acab93e3a.jpg"
+                                        alt="Sydney"
+                                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    />
+                                </div>
+                            </Link>
+                            <p className="mt-3 text-lg font-bold text-gray-900">Sydney, Australia</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="flex justify-start">
-                    <p className="text-[max(1.1vw,16px)] text-gray-500 font-semibold ml-30">
-                        Top tour served by our company. You can find the best tour for your next vacation.
-                    </p>
-                </div>
-
-                <div className="w-11/12 mx-auto mt-8 flex flex-wrap justify-center gap-6">
-
-                    <div className="w-65 cursor-pointer">
-                        <Link to="/tour">
-                            <img
-                                src="src/assets/a0d85f67b1994ac8a87c4b9b7952901c.jpg"
-                                alt="Paris"
-                                className="w-full h-80 object-cover rounded-xl"
-                            />
-                        </Link>
-                        <p className="mt-3 text-lg font-bold text-gray-900">
-                            Paris, France
-                        </p>
-                    </div>
-
-                    <div className="w-65 cursor-pointer">
-                        <Link to="/tour">
-                            <img
-                                src="src/assets/08c8f427c977922609982952ddc968a3.jpg"
-                                alt="Tokyo"
-                                className="w-full h-80 object-cover rounded-xl"
-                            />
-                        </Link>
-                        <p className="mt-3 text-lg font-bold text-gray-900">
-                            Tokyo, Japan
-                        </p>
-                    </div>
-
-                    <div className="w-65 cursor-pointer">
-                        <Link to="/tour">
-                            <img
-                                src="src/assets/a0d85f67b1994ac8a87c4b9b7952901c.jpg"
-                                alt="New York"
-                                className="w-full h-80 object-cover rounded-xl"
-                            />
-                        </Link>
-                        <p className="mt-3 text-lg font-bold text-gray-900">
-                            New York, USA
-                        </p>
-                    </div>
-
-                    <div className="w-65 cursor-pointer ">
-                        <Link to="/tour">
-                            <img
-                                src="src/assets/56652fa2a3808c02ca4d376acab93e3a.jpg"
-                                alt="Sydney"
-                                className="w-full h-80 object-cover rounded-xl"
-                            />
-                        </Link>
-                        <p className="mt-3 text-lg font-bold text-gray-900">
-                            Sydney, Australia
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div className="max-w-[2770px] mx-auto px-4 sm:px-6 lg:px-10">
-
-                <div className="mb-14">
-                    <div className="flex justify-center mt-10">
-                        <p className="text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-900 text-center">
+                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-16 py-12">
+                    <div className="mb-14 text-center">
+                        <p className="text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-900">
                             Journey To The Skies Made Simple!
                         </p>
-                    </div>
-
-                    <div className="flex justify-center mt-3">
-                        <p className="text-center w-full max-w-xl px-4 text-sm sm:text-base text-gray-700">
-                            Travelling is a Wonderful Way To Explore New Places. Learn About
-                            Different Cultures And Gain Unique Experiences.
+                        <p className="mt-3 mx-auto max-w-xl text-sm sm:text-base text-gray-700">
+                            Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique Experiences.
                         </p>
                     </div>
+
+                    <div className="flex flex-col lg:flex-row justify-center items-stretch lg:items-end w-full gap-6 lg:gap-0">
+                        <Link className="w-full lg:flex-1 max-w-[500px] lg:max-w-none" to="/tour">
+                            <div className="bg-neutral-200 rounded-t-3xl flex flex-col justify-between p-10 h-[380px] lg:h-[350px]">
+                                <MapPin className="p-2.5 h-12 w-12 bg-white text-blue-500 rounded-full shadow-sm" />
+                                <p className="text-3xl font-bold text-gray-900 leading-tight">
+                                    Find Your <br /> Perfect Trip
+                                </p>
+                            </div>
+                        </Link>
+
+                        <Link className="w-full lg:flex-1 max-w-[500px] lg:max-w-none z-10" to="/about">
+                            <div className="bg-blue-500 rounded-t-3xl flex flex-col justify-between p-10 h-[450px] lg:h-[460px] shadow-xl">
+                                <div>
+                                    <TicketsPlane className="p-4 h-16 w-16 border border-white text-white rounded-full mb-8" />
+                                    <p className="text-4xl font-bold text-white leading-none">Book</p>
+                                    <p className="text-4xl font-bold text-white leading-tight">A Ticket</p>
+                                    <p className="text-white text-base opacity-90 leading-relaxed mt-6">
+                                        Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique Experiences.
+                                    </p>
+                                </div>
+                                <p className="text-white text-lg font-semibold flex items-center mt-6 group">
+                                    Learn More
+                                    <ChevronRight className="ml-2 transform group-hover:translate-x-1 transition-transform" />
+                                </p>
+                            </div>
+                        </Link>
+
+                        <Link className="w-full lg:flex-1 max-w-[500px] lg:max-w-none" to="/flight">
+                            <div className="bg-neutral-200 rounded-t-3xl flex flex-col justify-between p-10 h-[380px] lg:h-[350px]">
+                                <Wallet className="p-2.5 h-12 w-12 bg-white text-blue-500 rounded-full shadow-sm" />
+                                <p className="text-3xl font-bold text-gray-900 leading-tight">
+                                    Pay & Start <br /> Journey
+                                </p>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
 
-                <div className="flex flex-col lg:flex-row justify-center items-center lg:items-end mb-15">
+                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-16 py-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-                    <Link className="flex w-full lg:w-auto justify-center" to="/tour">
-                        <div className="bg-neutral-200 rounded-t-3xl flex self-end w-full max-w-[400px] lg:w-[400px] h-[300px]">
+                        <div className="lg:col-span-5 flex flex-col gap- items-center lg:items-start">
+                            <div className="w-full max-w-[450px] h-[150px] sm:h-[200px] overflow-hidden rounded-t-2xl shadow-sm">
+                                <img
+                                    className="w-full h-full object-cover object-top"
+                                    src="src/assets/download (1).jpg"
+                                    alt="Wanderlust sky"
+                                />
+                            </div>
+                            <div className="w-full max-w-[450px] h-[350px] sm:h-[400px] overflow-hidden rounded-b-2xl shadow-md">
+                                <img
+                                    className="w-full h-full object-cover"
+                                    src="src/assets/download (1).jpg"
+                                    alt="Wanderlust beach"
+                                />
+                            </div>
+                        </div>
 
-                            <MapPin className="p-2 ml-10 mt-20 h-10 w-10 bg-white text-blue-500 rounded-full" />
+                        <div className="lg:col-span-7 flex flex-col justify-center space-y-4 lg:space-y-6 text-left">
 
-                            <p className="text-center -ml-9 mt-50 text-2xl w-full max-w-[170px] text-left font-bold text-gray-900">
-                                Find Your Perfect Trip
-                            </p>
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                                <p className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-gray-900 leading-none">
+                                    UNLEASH
+                                </p>
+                                <p className="max-w-[280px] text-[11px] sm:text-[13px] text-neutral-400 font-semibold leading-relaxed self-end pb-1">
+                                    Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-gray-900 leading-none">
+                                    WANDERLUST WITH
+                                </p>
+                            </div>
+
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                                <p className="max-w-[280px] text-[11px] sm:text-[13px] text-neutral-400 font-semibold leading-relaxed self-end pb-1 order-2 sm:order-1">
+                                    Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures.
+                                </p>
+                                <p className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-gray-900 leading-none order-1 sm:order-2">
+                                    SKYWINGS
+                                </p>
+                            </div>
 
                         </div>
-                    </Link>
+                    </div>
+                </div>
 
-                    <Link className="flex w-full lg:w-auto justify-center" to="/about">
-                        <div className="bg-blue-500 rounded-t-3xl w-full max-w-[400px] lg:w-[400px] h-[400px]">
-
-                            <TicketsPlane className="p-5 ml-10 mt-20 h-20 w-20 border border-white text-white rounded-full" />
-
-                            <p className="ml-10 text-left w-full max-w-[120px] mt-6 text-2xl font-bold text-white">
-                                Book
-                            </p>
-
-                            <p className="ml-10 text-left w-full max-w-[120px] -mt-2 text-2xl font-bold text-white">
-                                A Ticket
-                            </p>
-
-                            <p className="text-white w-full max-w-[240px] text-left ml-10 leading-6 mt-4">
-                                Travelling is a Wonderful Way To Explore New Places. Learn
-                                About Different Cultures And Gain Unique Experiences.
-                            </p>
-
-                            <p className="text-white font-semibold ml-10 leading-6 mt-2 flex items-center">
-                                Learn More
-                                <ChevronRight className="ml-2" />
-                            </p>
-
+                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-16 py-16 border-t border-gray-100">
+                    <div className="flex flex-col lg:flex-row gap-10 items-start">
+                        <div className="w-full lg:w-1/4">
+                            <span className="inline-block font-semibold px-6 py-2 rounded-full border border-neutral-400 text-gray-700">
+                                About
+                            </span>
                         </div>
-                    </Link>
 
-                    <Link className="flex w-full lg:w-auto justify-center" to="/flight">
-                        <div className="bg-neutral-200 rounded-t-3xl flex self-end w-full max-w-[400px] lg:w-[400px] h-[300px]">
-
-                            <Wallet className="p-2 ml-10 mt-20 h-10 w-10 bg-white text-blue-500 rounded-full" />
-
-                            <p className="text-center -ml-9 mt-50 text-2xl w-full max-w-[170px] text-left font-bold text-gray-900">
-                                Pay & Start Journey
+                        <div className="w-full lg:w-3/4 space-y-8">
+                            <p className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug">
+                                Discover the world with LuxFly, where every journey is crafted with comfort, adventure, and unforgettable experiences. We offer personalized travel packages, seamless bookings, and exceptional service to make every trip truly memorable.
                             </p>
 
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 relative">
+                                <div className="relative pl-6">
+                                    <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-blue-600 rounded-full"></div>
+                                    <p className="text-sm sm:text-base font-semibold text-neutral-600 leading-relaxed">
+                                        We create customized travel experiences tailored to your budget, preferences, and schedule. From family vacations to luxury getaways, every itinerary is carefully planned to ensure comfort, convenience, and unforgettable memories.
+                                    </p>
+                                </div>
+
+                                <div className="relative pl-6">
+                                    <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-blue-600 rounded-full"></div>
+                                    <p className="text-sm sm:text-base font-semibold text-neutral-600 leading-relaxed">
+                                        Enjoy seamless flight, hotel, and holiday package bookings with transparent pricing and dedicated support. We handle every detail so you can travel confidently and focus on making the most of your journey.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </Link>
-
-                </div>
-
-            </div>
-
-            <img className="w-[28%]  h-130 absolute ml-23 rounded-2xl " src="src/assets/download (1).jpg" alt="" />
-
-
-            <div className="mt-70 mb-40 mr-10">
-                <div className="">
-                    <p className=" text-left  text-[15px] leading-5 mt-3 text-neutral-600 absolute flex ml-221 font-semibold flex w-[28%]">
-                        Travelling is a Wonderful Way To Explore New Places. Learn
-                        About Different Cultures And Gain Unique Experiences.
-                    </p>
-                </div>
-
-
-                <div className="ml-26">
-                    <p className="text-7xl font-semibold text-center">UNLEASH</p>
-                </div>
-                <div className="flex justify-end mr-22">
-                    <p className="text-7xl font-semibold text-center">WANDERLUST WITH</p>
-                </div>
-
-                <div className="flex justify-end mr-22">
-                    <p className="text-7xl font-semibold text-center">SKYWINGS</p>
-                </div>
-
-                <div className="">
-                    <p className=" text-left  text-[15px] leading-5 -mt-13 text-neutral-600 absolute flex ml-139 font-semibold flex w-[22.2%] ">
-                        Travelling is a Wonderful Way To Explore New Places. Learn
-                        About Different Cultures.
-                    </p>
+                    </div>
                 </div>
             </div>
-
-            <div className='ml-22 mb-10 mt-50'>
-                <p className="font-semibold px-4 py-2 rounded-full border flex justify-center w-30 border-neutral-400">About</p>
-            </div>
-
-            <div className="mb-10 -mt-10">
-                <p className="w-[55%] text-left absolute ml-130 -mt-17 mb-3 font-bold ">Discover the world with LuxFly, where every journey is crafted with comfort, adventure, and unforgettable experiences. We offer personalized travel packages, seamless bookings, and exceptional service to make every trip truly memorable.</p>
-                <p className=" w-[26%] text-left font-semibold text-neutral-600 text-sm ml-134 pt-8 ">We create customized travel experiences tailored to your budget, preferences, and schedule. From family vacations to luxury getaways, every itinerary is carefully planned to ensure comfort, convenience, and unforgettable memories.</p>
-                <div className="h-32 rounded-full  w-2 bg-blue-700 absolute ml-130 -mt-28  "></div>
-                <div className="h-32 rounded-full  w-2 bg-blue-700 absolute ml-223 -mt-28  "></div>
-                <p className="w-[26%] text-left font-semibold text-neutral-600 text-sm ml-228 -mt-25 ">Enjoy seamless flight, hotel, and holiday package bookings with transparent pricing and dedicated support. We handle every detail so you can travel confidently and focus on making the most of your journey.</p>
-            </div>
-
-
-
-
-
 
         </>
     )
 }
 
+export default Home;
