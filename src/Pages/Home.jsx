@@ -245,7 +245,7 @@ const Home = () => {
 
                     <div className="flex flex-col lg:flex-row justify-center items-stretch lg:items-end w-full gap-6 lg:gap-0">
                         <Link className="w-full lg:flex-1 max-w-[500px] lg:max-w-none" to="/tour">
-                            <div className="bg-neutral-200 rounded-t-3xl flex flex-col justify-between p-10 h-[380px] lg:h-[350px]">
+                            <div className="bg-neutral-200 rounded-t-3xl rounded-bl-3xl flex flex-col justify-between p-10 h-[380px] lg:h-[350px]">
                                 <MapPin className="p-2.5 h-12 w-12 bg-white text-blue-500 rounded-full shadow-sm" />
                                 <p className="text-3xl font-bold text-gray-900 leading-tight">
                                     Find Your <br /> Perfect Trip
@@ -271,7 +271,7 @@ const Home = () => {
                         </Link>
 
                         <Link className="w-full lg:flex-1 max-w-[500px] lg:max-w-none" to="/flight">
-                            <div className="bg-neutral-200 rounded-t-3xl flex flex-col justify-between p-10 h-[380px] lg:h-[350px]">
+                            <div className="bg-neutral-200 rounded-t-3xl rounded-br-3xl flex flex-col justify-between p-10 h-[380px] lg:h-[350px]">
                                 <Wallet className="p-2.5 h-12 w-12 bg-white text-blue-500 rounded-full shadow-sm" />
                                 <p className="text-3xl font-bold text-gray-900 leading-tight">
                                     Pay & Start <br /> Journey
