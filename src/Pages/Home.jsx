@@ -1,5 +1,5 @@
 import React from 'react'
-import { Send, Plane, MoveRight, ArrowRight, Play, ChevronRight, PlaneTakeoff, Headphones, Shield, Star, PlaneLanding, Building2, Wallet, Car, TicketsPlane, Search, ArrowUpDown, MapPin } from 'lucide-react';
+import { Send, Plane, MoveRight, ArrowRight, Play, ChevronRight, PlaneTakeoff, Hotel, Headphones, Shield, Star, PlaneLanding, Building2, Wallet, Car, TicketsPlane, Search, ArrowUpDown, MapPin } from 'lucide-react';
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
     const [tripType, setTripType] = useState("round");
     const [tab, setTab] = useState("flights");
+    const [active, setActive] = useState("flight");
 
     return (
         <>
@@ -102,6 +103,36 @@ const Home = () => {
             </div>
 
 
+            <div className="flex ml-325 mt-15 w-80 rounded-full bg-black p-1 gap-1">
+                <button
+                    onClick={() => setActive("flight")}
+                    className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out cursor-pointer
+      ${active === "flight" ? "bg-white text-black" : "text-white"}`}
+                >
+                    <Plane className="-rotate-45 w-4 h-4" />
+                    Flight
+                </button>
+
+                <button
+                    onClick={() => setActive("hotel")}
+                    className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out cursor-pointer
+      ${active === "hotel" ? "bg-white text-black" : "text-white"}`}
+                >
+                    <Hotel className="w-4 h-4" />
+                    Hotels
+                </button>
+
+                <button
+                    onClick={() => setActive("car")}
+                    className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-full font-semibold transition-all duration-300 ease-in-out cursor-pointer
+      ${active === "car" ? "bg-white text-black" : "text-white"}`}
+                >
+                    <Car className="w-4 h-4" />
+                    Car
+                </button>
+            </div>
+
+
             <div className="mx-[3.6458vw] mb-[5.2083vw] mt-[2.6042vw] w-[calc(100%-7.2916vw)]">
                 <div className="border border-neutral-300 min-h-[max(10.4167vw,150px)] flex flex-col justify-center rounded-[max(2.0833vw,20px)] bg-white shadow-[0_0_10px_rgba(0,0,0,0.2)] p-[2.6042vw] lg:py-[1.5vw]">
 
@@ -164,10 +195,10 @@ const Home = () => {
             </div>
 
 
-            <div className="w-full overflow-x-hidden">
-                <div className="py-10 px-4 sm:px-6 lg:px-16 max-w-[1400px] mx-auto">
+            <div className="w-full overflow-x-hidden ">
+                <div className="py-10 px-4 sm:px-6 lg:px-16 max-w-[1700px] mx-auto">
                     <div className="text-left mb-2">
-                        <p className="text-2xl sm:text-3xl lg:text-[max(1.25vw,28px)] font-bold text-gray-900">
+                        <p className="text-2xl sm:text-3xl lg:text-[max(1.25vw,36px)] font-bold text-gray-900">
                             Top Destinations
                         </p>
                     </div>
@@ -181,7 +212,7 @@ const Home = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="w-full cursor-pointer group">
                             <Link to="/tour">
-                                <div className="overflow-hidden rounded-xl h-80">
+                                <div className="overflow-hidden rounded-xl h-120">
                                     <img
                                         src="src/assets/a0d85f67b1994ac8a87c4b9b7952901c.jpg"
                                         alt="Paris"
@@ -194,7 +225,7 @@ const Home = () => {
 
                         <div className="w-full cursor-pointer group">
                             <Link to="/tour">
-                                <div className="overflow-hidden rounded-xl h-80">
+                                <div className="overflow-hidden rounded-xl h-120">
                                     <img
                                         src="src/assets/08c8f427c977922609982952ddc968a3.jpg"
                                         alt="Tokyo"
@@ -207,7 +238,7 @@ const Home = () => {
 
                         <div className="w-full cursor-pointer group">
                             <Link to="/tour">
-                                <div className="overflow-hidden rounded-xl h-80">
+                                <div className="overflow-hidden rounded-xl h-120">
                                     <img
                                         src="src/assets/a0d85f67b1994ac8a87c4b9b7952901c.jpg"
                                         alt="New York"
@@ -220,7 +251,7 @@ const Home = () => {
 
                         <div className="w-full cursor-pointer group">
                             <Link to="/tour">
-                                <div className="overflow-hidden rounded-xl h-80">
+                                <div className="overflow-hidden rounded-xl h-120">
                                     <img
                                         src="src/assets/56652fa2a3808c02ca4d376acab93e3a.jpg"
                                         alt="Sydney"
@@ -233,7 +264,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-16 py-12">
+                <div className="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-16 py-12">
                     <div className="mb-14 text-center">
                         <p className="text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-900">
                             Journey To The Skies Made Simple!
@@ -245,7 +276,7 @@ const Home = () => {
 
                     <div className="flex flex-col lg:flex-row justify-center items-stretch lg:items-end w-full gap-6 lg:gap-0">
                         <Link className="w-full lg:flex-1 max-w-[500px] lg:max-w-none" to="/tour">
-                            <div className="bg-neutral-200 rounded-t-3xl rounded-bl-3xl flex flex-col justify-between p-10 h-[380px] lg:h-[350px]">
+                            <div className="bg-neutral-200 rounded-t-3xl rounded-bl-3xl flex flex-col justify-between p-10 h-[380px] lg:h-[380px]">
                                 <MapPin className="p-2.5 h-12 w-12 bg-white text-blue-500 rounded-full shadow-sm" />
                                 <p className="text-3xl font-bold text-gray-900 leading-tight">
                                     Find Your <br /> Perfect Trip
@@ -254,7 +285,7 @@ const Home = () => {
                         </Link>
 
                         <Link className="w-full lg:flex-1 max-w-[500px] lg:max-w-none z-10" to="/about">
-                            <div className="bg-blue-500 rounded-t-3xl flex flex-col justify-between p-10 h-[450px] lg:h-[460px] shadow-xl">
+                            <div className="bg-blue-500 rounded-t-3xl flex flex-col justify-between p-10 h-[450px] lg:h-[490px] shadow-xl">
                                 <div>
                                     <TicketsPlane className="p-4 h-16 w-16 border border-white text-white rounded-full mb-8" />
                                     <p className="text-4xl font-bold text-white leading-none">Book</p>
@@ -271,7 +302,7 @@ const Home = () => {
                         </Link>
 
                         <Link className="w-full lg:flex-1 max-w-[500px] lg:max-w-none" to="/flight">
-                            <div className="bg-neutral-200 rounded-t-3xl rounded-br-3xl flex flex-col justify-between p-10 h-[380px] lg:h-[350px]">
+                            <div className="bg-neutral-200 rounded-t-3xl rounded-br-3xl flex flex-col justify-between p-10 h-[380px] lg:h-[380px]">
                                 <Wallet className="p-2.5 h-12 w-12 bg-white text-blue-500 rounded-full shadow-sm" />
                                 <p className="text-3xl font-bold text-gray-900 leading-tight">
                                     Pay & Start <br /> Journey
@@ -281,7 +312,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-16 py-16">
+                <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-16 py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
                         <div className="lg:col-span-5 flex flex-col gap- items-center lg:items-start">
@@ -319,7 +350,7 @@ const Home = () => {
                             </div>
 
                             <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-                                <p className="max-w-[280px] text-[11px] sm:text-[13px] text-neutral-400 font-semibold leading-relaxed self-end pb-1 order-2 sm:order-1">
+                                <p className="max-w-[280px] text-[11px] sm:text-[14px] text-neutral-400 font-semibold leading-relaxed self-end pb-5 order-2 sm:order-1">
                                     Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures.
                                 </p>
                                 <p className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-gray-900 leading-none order-1 sm:order-2">
