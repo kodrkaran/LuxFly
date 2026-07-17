@@ -4,6 +4,7 @@ import About from "./Pages/About";
 import Tour from "./Pages/Tour";
 import Guide from "./Pages/Guide";
 import Flight from "./Pages/Flight";
+import Footer from "./Components/Footer";
 
 
 
@@ -16,12 +17,14 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/flight" element={<Flight />} />
         <Route path="/tour" element={<Tour />} />
         <Route path="/guide" element={<Guide />} />
       </Routes>
       
+      <Footer />
 
     </>
   );
