@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
-const Home = () => {
+const About = () => {
     const [tripType, setTripType] = useState("round");
     const [tab, setTab] = useState("flights");
     const [active, setActive] = useState("flight");
@@ -399,4 +399,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default About;
