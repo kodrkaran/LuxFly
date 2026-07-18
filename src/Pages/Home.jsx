@@ -1,5 +1,5 @@
 import React from 'react'
-import { Send, Plane, MoveRight, ArrowRight, Play, ChevronRight, PlaneTakeoff, Hotel, Headphones, Shield, Star, PlaneLanding, Building2, Wallet, Car, TicketsPlane, Search, ArrowUpDown, MapPin } from 'lucide-react';
+import { Send, Plane, MoveRight, ArrowRight, Play, GlobeCheck, Blend , ChevronRight, PlaneTakeoff, Hotel, Headphones, Shield, Star, PlaneLanding, Building2, Wallet, Car, TicketsPlane, Search, ArrowUpDown, MapPin } from 'lucide-react';
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -362,7 +362,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-16 py-16 border-t border-gray-100">
+                <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-16 py-16">
                     <div className="flex flex-col lg:flex-row gap-10 items-start">
                         <div className="w-full lg:w-1/4">
                             <span className="inline-block font-semibold px-6 py-2 rounded-full border border-neutral-400 text-gray-700">
@@ -393,6 +393,52 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="text-center mt-10 mb-10">
+                <p className="text-3xl font-bold text-gray-900">Discover The World From Above</p>
+                <p className="text-sm w-110 ml-156 text-gray-500 mt-2">
+                    Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 max-w-[1200px] mx-auto">
+                    <div className="w-90 rounded-3xl border-neutral-200 border-1 h-60 flex flex-col items-center justify-center p-4">
+                        <GlobeCheck className=" text-blue-600 rounded-full p-3 h-15 w-15 bg-neutral-100" />
+                        <p className="font-bold text-2xl w-30 leading-7 mt-4 ">
+                            Various Destination
+                        </p>
+                        <p className="mt-2 text-neutral-600">
+                            Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
+                        </p>
+                    </div>
+                    <div className="w-90 rounded-3xl border-neutral-200 border-1 h-60 flex flex-col items-center justify-center p-4">
+                        <Blend className=" text-blue-600 rounded-full p-3 h-15 w-15 bg-neutral-100" />
+                        <p className="font-bold text-2xl w-40 leading-7 mt-4">
+                            Everything Is Included
+                        </p>
+                        <p className="mt-2 text-neutral-600">
+                            Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
+                        </p>
+                    </div>
+                    <div className="w-90 rounded-3xl border-neutral-200 border-1 h-60 flex flex-col items-center justify-center p-4">
+                        <Wallet className=" text-blue-600 rounded-full p-3 h-15 w-15 bg-neutral-100" />
+                        <p className="font-bold text-2xl w-30 leading-7 mt-4">
+                            Affordable Price
+                        </p>
+                        <p className="mt-2 text-neutral-600">
+                            Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex items-center ml-45 mt-30 ">
+                        <img src="src/assets/8942a261f8951f1030739af9e6a959a0.jpg" alt="" className="rounded-full h-40 w-40" />
+                        <p className="ml-10 -mt-2 w-80 font-bold  text-4xl">Explore The Skies With Confidence!</p>
+
+                        <p className=" absolute w-70 ml-230 ">Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.</p>
+
+                        <img src="src/assets/8d8139dfa5468a053f321a76ceb0305a.jpg" alt="" className="h-40 w-40 rounded-full ml-170" />
             </div>
 
         </>
