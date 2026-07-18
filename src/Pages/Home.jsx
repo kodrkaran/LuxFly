@@ -395,51 +395,57 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="text-center mt-10 mb-10">
-                <p className="text-3xl font-bold text-gray-900">Discover The World From Above</p>
-                <p className="text-sm w-110 ml-156 text-gray-500 mt-2">
-                    Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
-                </p>
+            <div className="text-center mt-10 mb-10 px-4">
+    <p className="text-3xl font-bold text-gray-900">Discover The World From Above</p>
+    <p className="text-sm max-w-md mx-auto text-gray-500 mt-2">
+        Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
+    </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 max-w-[1200px] mx-auto">
-                    <div className="w-90 rounded-3xl border-neutral-200 border-1 h-60 flex flex-col items-center justify-center p-4">
-                        <GlobeCheck className=" text-blue-600 rounded-full p-3 h-15 w-15 bg-neutral-100" />
-                        <p className="font-bold text-2xl w-30 leading-7 mt-4 ">
-                            Various Destination
-                        </p>
-                        <p className="mt-2 text-neutral-600">
-                            Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
-                        </p>
-                    </div>
-                    <div className="w-90 rounded-3xl border-neutral-200 border-1 h-60 flex flex-col items-center justify-center p-4">
-                        <Blend className=" text-blue-600 rounded-full p-3 h-15 w-15 bg-neutral-100" />
-                        <p className="font-bold text-2xl w-40 leading-7 mt-4">
-                            Everything Is Included
-                        </p>
-                        <p className="mt-2 text-neutral-600">
-                            Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
-                        </p>
-                    </div>
-                    <div className="w-90 rounded-3xl border-neutral-200 border-1 h-60 flex flex-col items-center justify-center p-4">
-                        <Wallet className=" text-blue-600 rounded-full p-3 h-15 w-15 bg-neutral-100" />
-                        <p className="font-bold text-2xl w-30 leading-7 mt-4">
-                            Affordable Price
-                        </p>
-                        <p className="mt-2 text-neutral-600">
-                            Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 mt-10 max-w-[1600px] mx-auto justify-items-center">
+        <div className="w-full max-w-[360px] rounded-3xl border-neutral-200 border flex flex-col items-center justify-center p-6 min-h-[240px] text-center">
+            <GlobeCheck className="text-blue-600 rounded-full p-3 h-15 w-15 bg-neutral-100" />
+            <p className="font-bold text-2xl max-w-[150px] leading-7 mt-4">
+                Various Destination
+            </p>
+            <p className="mt-2 text-neutral-600 text-sm">
+                Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
+            </p>
+        </div>
+        <div className="w-full max-w-[360px] rounded-3xl border-neutral-200 border flex flex-col items-center justify-center p-6 min-h-[240px] text-center">
+            <Blend className="text-blue-600 rounded-full p-3 h-15 w-15 bg-neutral-100" />
+            <p className="font-bold text-2xl max-w-[180px] leading-7 mt-4">
+                Everything Is Included
+            </p>
+            <p className="mt-2 text-neutral-600 text-sm">
+                Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
+            </p>
+        </div>
+        <div className="w-full max-w-[360px] rounded-3xl border-neutral-200 border flex flex-col items-center justify-center p-6 min-h-[240px] text-center">
+            <Wallet className="text-blue-600 rounded-full p-3 h-15 w-15 bg-neutral-100" />
+            <p className="font-bold text-2xl max-w-[150px] leading-7 mt-4">
+                Affordable Price
+            </p>
+            <p className="mt-2 text-neutral-600 text-sm">
+                Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
+            </p>
+        </div>
+    </div>
+</div>
 
-            <div className="flex items-center ml-45 mt-30 ">
-                        <img src="src/assets/8942a261f8951f1030739af9e6a959a0.jpg" alt="" className="rounded-full h-40 w-40" />
-                        <p className="ml-10 -mt-2 w-80 font-bold  text-4xl">Explore The Skies With Confidence!</p>
-
-                        <p className=" absolute w-70 ml-230 ">Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.</p>
-
-                        <img src="src/assets/8d8139dfa5468a053f321a76ceb0305a.jpg" alt="" className="h-40 w-40 rounded-full ml-170" />
-            </div>
+<div className="max-w-[1500px] mx-auto px-4 mt-20 mb-10">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+        <div className="flex flex-col sm:flex-row items-center gap-6 md:w-1/2">
+            <img src="src/assets/8942a261f8951f1030739af9e6a959a0.jpg" alt="" className="rounded-full h-40 w-40 object-cover shrink-0" />
+            <p className="font-bold text-4xl max-w-xs">Explore The Skies With Confidence!</p>
+        </div>
+        <div className="flex flex-col-reverse sm:flex-row items-center gap-6 md:w-1/2 md:justify-end">
+            <p className="text-gray-600 text-sm max-w-xs md:text-right">
+                Travelling is a Wonderful Way To Explore New Places. Learn About Different Cultures And Gain Unique.
+            </p>
+            <img src="src/assets/8d8139dfa5468a053f321a76ceb0305a.jpg" alt="" className="h-40 w-40 rounded-full object-cover shrink-0" />
+        </div>
+    </div>
+</div>
 
         </>
     )
